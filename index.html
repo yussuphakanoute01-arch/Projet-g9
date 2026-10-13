@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des étudiants UNCHK</title>
+    <link rel="stylesheet" href="titre.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+<div class="header">
+    <div>
+        <small>ESPACE ADMINISTRATION</small>
+        <h1>Gestion des étudiants UNCHK</h1>
+        <p>Gérez les inscriptions et suivez les résultats.</p>
+    </div>
+    <div id="logo">
+        🎓
+    </div>
+</header>
+  
+
+<div="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h4>Total étudiants</h4>
+            <span id="totalEtudiants">0</span>
+        </div>
+
+        <div class="card">
+            <h4>Moyenne générale</h4>
+            <span id="moyenneGenerale">0.00/20</span>
+        </div>
+
+        <div class="card">
+            <h4>Étudiants admis</h4>
+            <span id="etudiantsAdmis">0</span>
+        </div>
+
+    </div>
+
+    <div class="form-card">
+
+        <h2>Ajouter un étudiant</h2>
+
+        <div class="grid">
+
+            <div>
+                <label>Nom</label>
+                <input type="text" id="nom" placeholder="Ex : Diallo">
+            </div>
+
+            <div>
+                <label>Prénom</label>
+                <input type="text" id="prenom" placeholder="Ex : Awa">
+            </div>
+
+            <div>
+                <label>Adresse e-mail</label>
+                <input type="email" id="email" placeholder="awa@gmail.com">
+            </div>
+
+            <div>
+                <label>Classe</label>
+                <input type="text" id="classe" placeholder="Ex : L1 Informatique">
+            </div>
+
+            <div>
+                <label>Note sur 20</label>
+                <input type="number" id="note" placeholder="Ex : 15">
+            </div>
+
+        </div>
+
+        <button id="btnAjouter">
+            Ajouter l'étudiant
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <div class="table-card">
+
+        <div class="table-header">
+            <h2>Liste des étudiants</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Rechercher un étudiant..."
+            >
+        </div>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>Nom complet</th>
+                <th>E-mail</th>
+                <th>Classe</th>
+                <th>Note</th>
+                <th>Résultat</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
